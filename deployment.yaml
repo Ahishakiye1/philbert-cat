@@ -1,0 +1,22 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: philbert-cat-deployment
+  labels:
+    app: philbert-cat
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: philbert-cat
+  template:
+    metadata:
+      labels:
+        app: philbert-cat
+    spec:
+      containers:
+      - name: philbert-cat-container
+        image: <your-dockerhub-username>/philbert-cat:V6
+        ports:
+        - containerPort: 80
