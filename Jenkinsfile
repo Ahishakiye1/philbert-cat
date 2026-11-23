@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-github-username>/philbert-cat.git'
+                git branch: 'main', url: 'https://github.com/ahishakiye1/philbert-cat.git'
             }
         }
 
