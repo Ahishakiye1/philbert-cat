@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: philbert-cat-container
-        image: <your-dockerhub-username>/philbert-cat:V6
+        image: ahishakiye1/philbert-cat:V6
         ports:
         - containerPort: 80
